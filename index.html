@@ -1,0 +1,388 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#4A2638">
+  <meta name="description" content="Discover personalized skin and aesthetic treatments at Elysian Skin & Aesthetic Studio, Islamabad.">
+  <title>Elysian | Skin & Aesthetic Studio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div class="announcement">
+    Your journey to feeling good in your skin starts here
+  </div>
+
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="brand" aria-label="Elysian home">
+        <span class="brand-name">Elysian</span>
+        <span class="brand-subtitle">Skin & Aesthetic Studio</span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle"
+        aria-label="Open navigation menu" aria-expanded="false">☰</button>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#treatments">Treatments</a>
+        <a href="#about">About</a>
+        <a href="#rituals">Our Approach</a>
+        <a href="#studio">Contact</a>
+        <a href="#contact" class="btn">Book Consultation ↗</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <div class="section-label">A little time for yourself</div>
+        <h1>Your skin,<br>your <em>ritual.</em></h1>
+
+        <p class="hero-description">
+          Thoughtful aesthetic care, personalized treatments, and a
+          little more time dedicated to you. Discover a skin journey
+          that starts with understanding your needs.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#treatments" class="btn">Explore Treatments ↗</a>
+          <a href="#about" class="btn btn-outline">Discover Elysian</a>
+        </div>
+
+        <div class="hero-note">
+          PERSONALIZED CARE · YOUR SKIN, YOUR JOURNEY
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <img src="images/heroimg.avif"
+          alt="Professional facial skincare treatment" fetchpriority="high">
+        <div class="hero-stamp">A moment<br>just for you</div>
+      </div>
+    </section>
+
+    <section class="brand-strip" aria-label="Our philosophy">
+      <div class="container strip-inner">
+        <span>Personalized Care</span><span class="star">✳</span>
+        <span>Thoughtful Treatments</span><span class="star">✳</span>
+        <span>Your Skin, Your Ritual</span><span class="star">✳</span>
+        <span>Feel Like Yourself</span>
+      </div>
+    </section>
+
+    <section class="section treatments" id="treatments">
+      <div class="container">
+        <div class="section-heading">
+          <div class="section-label">Explore your options</div>
+          <h2>Care that starts<br>with <em>you.</em></h2>
+          <p class="section-description">
+            Every skin journey is different. Explore our treatment
+            categories and contact us to discuss which options may
+            suit your goals.
+          </p>
+        </div>
+
+        <div class="treatment-filters" aria-label="Filter treatments">
+          <button class="filter-btn active" data-filter="all">All Treatments</button>
+          <button class="filter-btn" data-filter="skin">Skin</button>
+          <button class="filter-btn" data-filter="laser">Laser</button>
+          <button class="filter-btn" data-filter="regenerative">Regenerative</button>
+          <button class="filter-btn" data-filter="injectables">Injectables</button>
+        </div>
+
+        <div class="treatment-grid">
+          <article class="treatment-card" data-category="skin">
+            <div class="treatment-image">
+              <img src="images/skin_rejuvenatiom.jpg"
+                alt="Facial skincare treatment" loading="lazy">
+            </div>
+            <div class="treatment-info">
+              <span class="treatment-category">Skin · Hydration</span>
+              <h3>HydraFacial</h3>
+              <p>A facial treatment focused on cleansing, exfoliation, and hydration.</p>
+              <a href="#contact" class="text-link treatment-book" data-treatment="HydraFacial">Enquire about treatment ↗</a>
+            </div>
+          </article>
+
+          <article class="treatment-card" data-category="laser">
+            <div class="treatment-image">
+              <img src="images/laser-hair-removal.webp"
+                alt="Laser hair removal treatment" loading="lazy">
+            </div>
+            <div class="treatment-info">
+              <span class="treatment-category">Laser · Hair Reduction</span>
+              <h3>Laser Hair Removal</h3>
+              <p>Discuss your goals and suitability for professional laser hair reduction.</p>
+              <a href="#contact" class="text-link treatment-book" data-treatment="Laser Hair Removal">Enquire about treatment ↗</a>
+            </div>
+          </article>
+
+          <article class="treatment-card" data-category="regenerative">
+            <div class="treatment-image">
+              <img src="images/Prpface.webp"
+                alt="Professional facial care" loading="lazy">
+            </div>
+            <div class="treatment-info">
+              <span class="treatment-category">Regenerative · Skin</span>
+              <h3>PRP Face</h3>
+              <p>Learn about platelet-rich plasma treatments and whether they may be appropriate for you.</p>
+              <a href="#contact" class="text-link treatment-book" data-treatment="PRP Face">Enquire about treatment ↗</a>
+            </div>
+          </article>
+
+          <article class="treatment-card" data-category="regenerative">
+            <div class="treatment-image">
+              <img src="images/prp hair.jpg"
+                alt="Hair and wellness treatment setting" loading="lazy">
+            </div>
+            <div class="treatment-info">
+              <span class="treatment-category">Regenerative · Hair</span>
+              <h3>PRP Hair</h3>
+              <p>Discuss hair concerns and available treatment options with the studio.</p>
+              <a href="#contact" class="text-link treatment-book" data-treatment="PRP Hair">Enquire about treatment ↗</a>
+            </div>
+          </article>
+
+          <article class="treatment-card" data-category="laser">
+            <div class="treatment-image">
+              <img src="images/laser-hair-removal.webp"
+                alt="Skin rejuvenation consultation" loading="lazy">
+            </div>
+            <div class="treatment-info">
+              <span class="treatment-category">Laser · Skin</span>
+              <h3>Pico Laser</h3>
+              <p>Ask about laser options for selected pigmentation and skin concerns.</p>
+              <a href="#contact" class="text-link treatment-book" data-treatment="Pico Laser">Enquire about treatment ↗</a>
+            </div>
+          </article>
+
+          <article class="treatment-card" data-category="skin">
+            <div class="treatment-image">
+              <img src="images/Botox & Fillers.avif"
+                alt="Skincare products and treatment" loading="lazy">
+            </div>
+            <div class="treatment-info">
+              <span class="treatment-category">Skin · Resurfacing</span>
+              <h3>Chemical Peels & Acne Scars</h3>
+              <p>Explore professional exfoliation options based on your skin assessment.</p>
+              <a href="#contact" class="text-link treatment-book" data-treatment="Chemical Peels">Enquire about treatment ↗</a>
+            </div>
+          </article>
+
+          <article class="treatment-card" data-category="injectables">
+            <div class="treatment-image">
+              <img src="images/botox.webp"
+                alt="Aesthetic consultation setting" loading="lazy">
+            </div>
+            <div class="treatment-info">
+              <span class="treatment-category">Injectables · Aesthetics</span>
+              <h3>Botox</h3>
+              <p>Arrange a consultation to discuss suitability, expected outcomes, and risks.</p>
+              <a href="#contact" class="text-link treatment-book" data-treatment="Botox">Enquire about treatment ↗</a>
+            </div>
+          </article>
+
+          <article class="treatment-card" data-category="injectables">
+            <div class="treatment-image">
+              <img src="images/bootox.webp"
+                alt="Beauty and aesthetic care" loading="lazy">
+            </div>
+            <div class="treatment-info">
+              <span class="treatment-category">Injectables · Aesthetics</span>
+              <h3>Dermal Fillers</h3>
+              <p>Learn about available options through a qualified professional consultation.</p>
+              <a href="#contact" class="text-link treatment-book" data-treatment="Dermal Fillers">Enquire about treatment ↗</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="treatments-bottom">
+          <a href="#contact" class="btn">Ask About All Treatments ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container about-grid">
+        <div class="about-visual">
+          <img src="images/about.avif"
+            alt="Peaceful wellness and treatment space" loading="lazy">
+        </div>
+
+        <div class="about-copy">
+          <div class="section-label">The Elysian philosophy</div>
+          <h2>Beauty is personal.<br>So is <em>your care.</em></h2>
+          <p>At Elysian Skin & Aesthetic Studio, we believe that aesthetic care should begin with listening. Your concerns, your goals, and your comfort all matter.</p>
+          <p>Our approach is centered on thoughtful consultations, clear information, and discussing options that are appropriate for your individual needs.</p>
+
+          <div class="about-points">
+            <div class="about-point"><strong>Personal</strong><span>Care tailored to your goals</span></div>
+            <div class="about-point"><strong>Thoughtful</strong><span>Informed treatment choices</span></div>
+            <div class="about-point"><strong>Comfort</strong><span>Your questions come first</span></div>
+            <div class="about-point"><strong>Confidence</strong><span>Care without pressure</span></div>
+          </div>
+
+          <a href="#contact" class="btn">Start Your Consultation ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section rituals" id="rituals">
+      <div class="container">
+        <div class="section-heading center">
+          <div class="section-label">A different kind of experience</div>
+          <h2>Your journey, <em>our care.</em></h2>
+          <p class="section-description">Good aesthetic care is about more than a treatment. It is about feeling heard, informed, and comfortable throughout your experience.</p>
+        </div>
+
+        <div class="ritual-grid">
+          <article class="ritual-card">
+            <div class="ritual-number">01</div>
+            <h3>Listen & Understand</h3>
+            <p>Start by sharing your concerns, expectations, and skin goals. A consultation helps identify the questions that matter to you.</p>
+          </article>
+          <article class="ritual-card">
+            <div class="ritual-number">02</div>
+            <h3>Explore Your Options</h3>
+            <p>Learn about relevant treatments, their limitations, possible risks, and aftercare before deciding what is right for you.</p>
+          </article>
+          <article class="ritual-card">
+            <div class="ritual-number">03</div>
+            <h3>Move At Your Pace</h3>
+            <p>Make informed decisions without pressure. Your comfort, questions, and individual needs deserve attention.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="consultation" id="contact">
+      <div class="container">
+        <div class="section-label">Your next step starts here</div>
+        <h2>Let's talk about your<br><em>skin goals.</em></h2>
+        <p>Have a question about a treatment? Contact us on WhatsApp to enquire about a consultation and discuss the next steps.</p>
+        <a class="btn" href="https://wa.me/923405225566?text=Hello%20Elysian%20Skin%20%26%20Aesthetic%20Studio%2C%20I%20would%20like%20to%20enquire%20about%20a%20consultation."
+          target="_blank" rel="noopener noreferrer">☏ Book Consultation on WhatsApp ↗</a>
+      </div>
+    </section>
+
+    <section class="section" id="studio">
+      <div class="container studio-grid">
+        <div class="studio-image">
+          <img src="images/studio-image.avif"
+            alt="Calm wellness studio interior" loading="lazy">
+        </div>
+
+        <div class="studio-copy">
+          <div class="section-label">Come say hello</div>
+          <h2>A little space<br>for <em>you.</em></h2>
+          <p>Have questions before choosing a treatment? We would be happy to hear from you. Get in touch to enquire about our services and consultation arrangements.</p>
+
+          <div class="contact-item">
+            <div class="contact-icon">⌖</div>
+            <div><strong>Islamabad Studio</strong><span>Plaza 21, 2nd Floor, Orchard Road,<br>Sector A, DHA Phase 2, Islamabad</span></div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">☏</div>
+            <div><strong>WhatsApp & Booking</strong><a href="https://wa.me/923405225566" target="_blank" rel="noopener noreferrer">0340 522 55 66</a></div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">✉</div>
+            <div><strong>Email</strong><a href="mailto:elysianaestheticsstudio@gmail.com">elysianaestheticsstudio@gmail.com</a></div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">◎</div>
+            <div><strong>Instagram</strong><a href="https://www.instagram.com/elysianaesthetics.studio/" target="_blank" rel="noopener noreferrer">@elysianaesthetics.studio</a></div>
+          </div>
+
+          <a href="https://wa.me/923405225566?text=Hello%20Elysian%2C%20I%20would%20like%20to%20ask%20about%20your%20studio%20and%20consultations."
+            class="btn" target="_blank" rel="noopener noreferrer">Contact Us on WhatsApp ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section faq" id="faq">
+      <div class="container">
+        <div class="section-heading center">
+          <div class="section-label">A few helpful answers</div>
+          <h2>Before you <em>begin.</em></h2>
+          <p class="section-description">Have another question? Contact the studio directly for information specific to your needs.</p>
+        </div>
+
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">How do I book a consultation?<span>+</span></button>
+            <div class="faq-answer">Click any consultation button on this website. It will open WhatsApp with a pre-filled enquiry message that you can send to the studio.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">Which treatment is right for me?<span>+</span></button>
+            <div class="faq-answer">The appropriate option depends on your individual concerns, medical history, skin type, and goals. Ask a qualified professional for an assessment before choosing a treatment.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">Can I ask about pricing on WhatsApp?<span>+</span></button>
+            <div class="faq-answer">Yes. Send your enquiry on WhatsApp to ask about treatment availability, pricing, and consultation arrangements.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">Does a WhatsApp enquiry confirm my appointment?<span>+</span></button>
+            <div class="faq-answer">No. Sending a message is an enquiry, not a confirmed booking. Please wait for the studio to respond and confirm your appointment details.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#home" class="brand">
+            <span class="brand-name">Elysian</span>
+            <span class="brand-subtitle">Skin & Aesthetic Studio</span>
+          </a>
+          <p>Thoughtful aesthetic care, personalized conversations, and a little time dedicated to yourself.</p>
+        </div>
+
+        <div class="footer-column">
+          <h3>Explore</h3>
+          <a href="#home">Home</a>
+          <a href="#treatments">Treatments</a>
+          <a href="#about">About Elysian</a>
+          <a href="#rituals">Our Approach</a>
+          <a href="#faq">Frequently Asked Questions</a>
+        </div>
+
+        <div class="footer-column">
+          <h3>Get In Touch</h3>
+          <a href="https://wa.me/923405225566" target="_blank" rel="noopener noreferrer">WhatsApp: 0340 522 55 66</a>
+          <a href="mailto:elysianaestheticsstudio@gmail.com">Email the Studio</a>
+          <a href="https://www.instagram.com/elysianaesthetics.studio/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <p>Islamabad · DHA Phase 2</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© <span id="year"></span> Elysian Skin & Aesthetic Studio</span>
+        <span>Care begins with you.</span>
+      </div>
+    </div>
+  </footer>
+
+  <a class="whatsapp-float"
+    href="https://wa.me/923405225566?text=Hello%20Elysian%2C%20I%20would%20like%20to%20book%20a%20consultation."
+    target="_blank" rel="noopener noreferrer"
+    aria-label="Book a consultation on WhatsApp" title="Book a consultation on WhatsApp">
+    <svg viewBox="0 0 32 32" aria-hidden="true">
+      <path d="M16 .8A15.1 15.1 0 0 0 3.05 23.7L.9 31.2l7.7-2.02A15.2 15.2 0 1 0 16 .8Zm0 27.55c-2.3 0-4.56-.62-6.53-1.8l-.47-.28-4.56 1.2 1.22-4.44-.31-.5A12.4 12.4 0 1 1 16 28.35Zm6.8-9.28c-.37-.19-2.2-1.08-2.54-1.2-.34-.13-.59-.19-.83.19-.25.37-.95 1.2-1.17 1.44-.22.25-.43.28-.8.1-.37-.19-1.56-.58-2.97-1.84-1.1-.98-1.84-2.2-2.06-2.57-.21-.37-.02-.57.16-.75.17-.16.37-.43.55-.65.18-.22.25-.37.37-.62.12-.25.06-.46-.03-.65-.09-.18-.83-2-1.14-2.74-.3-.72-.61-.62-.83-.63l-.71-.02c-.25 0-.65.1-.99.46-.34.37-1.3 1.27-1.3 3.1 0 1.84 1.33 3.62 1.52 3.87.18.25 2.61 3.99 6.32 5.59.88.38 1.57.61 2.11.78.89.28 1.7.24 2.34.15.71-.11 2.2-.9 2.51-1.76.31-.86.31-1.6.22-1.76-.1-.16-.34-.25-.71-.43Z"/>
+    </svg>
+  </a>
+</body>
+</html>
